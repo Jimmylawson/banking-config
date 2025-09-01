@@ -1,8 +1,8 @@
 spring:
   datasource:
    url: ${SPRING_DATASOURCE_URL:jdbc:postgresql://postgres:5432/transferdb}
-    username: ${DATABASE_USER:transfer_user}
-    password: ${DATABASE_PASSWORD:transfer_password}
+    username: ${DATABASE_USER:postgres}
+    password: ${DATABASE_PASSWORD:postgres}
     driver-class-name: org.postgresql.Driver
   jpa:
     hibernate:
