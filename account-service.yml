@@ -1,0 +1,12 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://postgres:5432/accountdb
+    username: account_user
+    password: account_password
+    driver-class-name: org.postgresql.Driver
+  jpa:
+    hibernate:
+      ddl-auto: validate
+    properties:
+      hibernate.format_sql: true
+    show-sql: true
