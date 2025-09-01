@@ -1,12 +1,12 @@
 spring:
   datasource:
-   url: ${SPRING_DATASOURCE_URL:jdbc:postgresql://postgres:5432/customerdb}
+    url: ${SPRING_DATASOURCE_URL:jdbc:postgresql://localhost:5432/customerdb}
     username: ${DATABASE_USER:postgres}
     password: ${DATABASE_PASSWORD:postgres}
     driver-class-name: org.postgresql.Driver
   jpa:
     hibernate:
-      ddl-auto: update
+      ddl-auto: update   # dev only; prefer validate + Flyway later
     properties:
       hibernate.format_sql: true
     show-sql: true
